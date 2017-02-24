@@ -7,7 +7,7 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
-gems: [jekyll-paginate,jemoji]
+gems: [jekyll-paginate,jemoji,jekyll-seo-tag]
 paginate: 20
 baseurl: /tech
 domain_name: 'http://nadunsblog.com'
