@@ -1,0 +1,48 @@
+name: Nadun's Blog
+description: Code, Tech and Ideas
+meta_description: "Blog about tech, code and ideas"
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+gems: [jekyll-paginate,jemoji]
+paginate: 20
+baseurl: /tech/
+domain_name: 'http://nadunsblog.com'
+google_analytics: 'UA-92516981-1'
+disqus: true
+disqus_shortname: 'nadunsblog'
+
+# Details for the RSS feed generator
+url:            'http://your-blog-url.example.com'
+
+author:         'Nadun Indunil'
+authorTwitter:  'nadmatrix'
+twitter_username: 'nadmatrix'
+facebook_username: 'nadun.indunil'
+github_username: 'nadunindunil'
+linkedin_username: 'nadunindunil'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
