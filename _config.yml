@@ -9,7 +9,7 @@ highlighter: rouge
 
 gems: [jekyll-paginate,jemoji]
 paginate: 20
-baseurl: /tech/
+baseurl: /tech
 domain_name: 'http://nadunsblog.com'
 google_analytics: 'UA-92516981-1'
 disqus: true
