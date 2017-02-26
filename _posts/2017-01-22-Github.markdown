@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Going Open Source with Github
-description: How to prepare a open source repo in Github
+description: How to prepare an open source repo in Github
 author: Nadun Indunil
 header-img: assets/images/git.png
 ---
