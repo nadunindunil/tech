@@ -3,7 +3,7 @@ layout: post
 title: Docker
 description: Introduction to Docker
 author: Nadun Indunil
-header-img: assets/images/docker.png
+header-img: assets/images/dockericon.png
 ---
 
 At the beginning when people host applications they used separate servers for each application. But using a whole machine for just one application was a waste of machine’s resources. Also the cost people spent on the server was considered as a waste, because single application could use at most a half of a machine resource.
