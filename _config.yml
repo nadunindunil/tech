@@ -7,7 +7,7 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
-gems: [jekyll-paginate,jemoji,jekyll-seo-tag]
+gems: [jekyll-paginate,jemoji,jekyll-seo-tag,jekyll-sitemap]
 paginate: 20
 baseurl: /tech
 domain_name: 'http://nadunsblog.com'
@@ -18,7 +18,7 @@ disqus_shortname: 'nadunsblog'
 # Details for the RSS feed generator
 url:            'http://your-blog-url.example.com'
 
-author:         'Nadun Indunil'
+author:         Nadun Indunil
 authorTwitter:  'nadmatrix'
 twitter_username: 'nadmatrix'
 facebook_username: 'nadun.indunil'

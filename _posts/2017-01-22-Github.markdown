@@ -2,6 +2,8 @@
 layout: post
 title: Going Open Source with Github
 description: How to prepare a open source repo in Github
+author: Nadun Indunil
+header-img: assets/images/git.png
 ---
 
 Open source softwares means an free softwares that anyone can use for the development or for business. These are published under open source licences so other developers can read and use those softwares for their projects as well.
