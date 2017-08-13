@@ -18,7 +18,7 @@ During the time I was learning Formal Methods of Software Engineering a major di
 
 In Z-Editor, schemas look like nested blocks but draft.js doesn’t support nested blocks (yet). The alternative was to create the schemas in plane blocks. Iconic schema tables were created using controlled css boundaries in between divs `<div>`. As an example main iconic schema is designed using upper bounded block, bar block, lower bounded block, bar block and lower bounded block respectively and the rest was handled by the awesome custom block rendering in the draft.js.
 
-![image](https://goo.gl/photos/EaGu63FEKE43kmDs9)
+![image](https://github.com/nadunindunil/tech/blob/master/assets/images/z2.png)
 
 Adding symbols was an easy part to do. When you click a button in the symbols toolbar that modifies the *contentState* and inserts the relevent symbol. Then it pushes the *contentState* to *EditorState*. 
 
