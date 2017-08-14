@@ -16,9 +16,50 @@ During the time I was learning Formal Methods of Software Engineering a major di
 
 **[Z-Editor](https://z-editor.github.io/)** is an online editor that you can use to prepare your formal method documents without installing any plugins or IDEs. It is just a simple react application combined with awesome [draft.js](https://draftjs.org/) library. Still I have lot to implement but main functionalities such as printing the document is already implemented.
 
-In Z-Editor, schemas look like nested blocks but draft.js doesn’t support nested blocks (yet). The alternative was to create the schemas in plane blocks. Iconic schema tables were created using controlled css boundaries in between divs `<div>`. As an example main iconic schema is designed using upper bounded block, bar block, lower bounded block, bar block and lower bounded block respectively and the rest was handled by the awesome custom block rendering in the draft.js.
+left side toolbar is provided with schema types
 
-![image](https://github.com/nadunindunil/tech/blob/master/assets/images/z2.png)
+and
+
+right side toolbar provides,
+- Logics
+- Sets
+- Relations
+- Functions 
+- Sequences 
+- Bags
+
+notations.
+
+### Terms in Draft.js
+
+Before going into more technical details you may need a to about contentBlocks, contentState and editorState.
+
+ContentBlock is an Immutable Record that represents the full state of a single block of editor content, including:
+
+- Plain text contents of the block
+- Type, e.g. paragraph, header, list item
+- Entity, inline style, and depth information
+
+ContentState is an Immutable Record that represents the full state of:
+
+- The entire contents of an editor: text, block and inline styles, and entity ranges.
+- Two selection states of an editor: before and after the rendering of these contents.
+
+EditorState is the top-level state object for the editor.
+
+It is an Immutable Record that represents the entire state of a Draft editor, including:
+
+- The current text content state
+- The current selection state
+- The fully decorated representation of the contents
+- Undo/redo stacks
+- The most recent type of change made to the contents
+
+you can find more from [here](https://draftjs.org/)
+
+### Z-Editor implementation
+
+In Z-Editor, schemas look like nested blocks but draft.js doesn’t support nested blocks (yet). The alternative was to create the schemas in plane blocks. Iconic schema tables were created using controlled css boundaries in between divs `<div>`. As an example main iconic schema is designed using upper bounded block, bar block, lower bounded block, bar block and lower bounded block respectively and the rest was handled by the awesome custom block rendering in the draft.js.
 
 Adding symbols was an easy part to do. When you click a button in the symbols toolbar that modifies the *contentState* and inserts the relevent symbol. Then it pushes the *contentState* to *EditorState*. 
 
